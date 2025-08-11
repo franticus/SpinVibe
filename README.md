@@ -1,3 +1,3 @@
-# ChipChase
+# SpinVibe
 
-[Deploy ChipChase](https://franticus.github.io/ChipChase/)
+[Deploy SpinVibe](https://franticus.github.io/SpinVibe/)
