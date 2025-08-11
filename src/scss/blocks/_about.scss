@@ -1,0 +1,115 @@
+.about {
+	font-family: var(--font-accent);
+
+	&__title {
+		font-weight: 900;
+		font-size: 300px;
+		font-size: clamp(60px, 18vw, 300px);
+		line-height: 80%;
+		letter-spacing: -0.04em;
+		text-transform: uppercase;
+		text-align: center;
+		white-space: nowrap;
+		color: #f4f8f9;
+		text-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05),
+			-5px -5px 5px rgba(244, 248, 249, 0.05),
+			-4px 0 4px rgba(0, 0, 0, 0.05);
+
+		animation: textShadowRotate 5s infinite;
+
+		@include tablet {
+			font-size: clamp(60px, 20vw, 300px);
+			white-space: normal;
+		}
+
+		@include mobile {
+			font-size: clamp(80px, 20vw, 300px);
+		}
+	}
+
+	&__bg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: -12%;
+
+		@include tablet {
+			margin-top: -5%;
+		}
+
+		@include mobile {
+			max-width: 238px;
+			margin: 0 auto;
+			margin-top: -7%;
+		}
+	}
+
+	&__content {
+		&-title {
+			font-family: var(--font-second);
+			font-weight: 500;
+			font-size: 45px;
+			line-height: 110%;
+			letter-spacing: -0.04em;
+			text-transform: uppercase;
+			text-align: center;
+			color: #000;
+			max-width: 764px;
+			margin: 40px auto;
+
+			@include mobile {
+				font-size: 25px;
+				width: 100%;
+				max-width: 100%;
+				text-align: left;
+				margin: 20px auto;
+			}
+		}
+	}
+
+	&__text {
+		font-family: var(--font-accent);
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 110%;
+		letter-spacing: -0.04em;
+		color: rgba(0, 0, 0, 0.8);
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			font-size: 14px;
+		}
+
+		&-left {
+			grid-column: 2;
+			grid-row: 1;
+			text-align: right;
+			justify-self: end;
+			max-width: 303px;
+			padding-right: 10px;
+
+			@include mobile {
+				text-align: left;
+				justify-self: start;
+				padding-right: 0;
+				margin-bottom: 5px;
+				max-width: 100%;
+			}
+		}
+
+		&-right {
+			grid-column: 3;
+			grid-row: 2;
+			text-align: left;
+			max-width: 303px;
+
+			@include mobile {
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+:root {
+	--container-width: 1600px;
+	--container-padding: 40px;
+
+	--font-main: sans-serif;
+	--font-accent: "Inter", sans-serif;
+	--font-second: "Involve", sans-serif;
+	--font-titles: var(--font-accent);
+
+	--page-bg: #F4F8F9;
+	--text-color: #F4F8F9;
+	--text-color-dark: #000;
+	--accent: #11C700;
+	--accent-dark: #000;
+	--link-color: #2578c8;
+
+
+	--laptop-size: 1600px;
+	--tablet-size: 768px;
+	--mobile-size: 468px;
+}
+
+// .dark {
+// 	--page-bg: #252526;
+// 	--text-color: #fff;
+// }

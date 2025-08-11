@@ -1,0 +1,160 @@
+.header__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+}
+
+.nav__link {
+	transition: all 0.2s ease-in;
+	position: relative;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: -0.04em;
+	color: var(--text-color-dark);
+
+	margin-left: -10px;
+
+	&::before {
+		content: "[";
+		font-family: 'Involve', sans-serif;
+		font-size: 16px;
+		display: inline-block;
+		transition: all 0.2s ease-in;
+		margin-right: 4px;
+		opacity: 0;
+	}
+
+	&::after {
+		content: "]";
+		font-family: 'Involve', sans-serif;
+		font-size: 16px;
+		display: inline-block;
+		transition: all 0.2s ease-in;
+		margin-left: 4px;
+		opacity: 0;
+	}
+
+	&:hover {
+
+		&::before,
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
+.nav__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+	height: 40px;
+	color: var(--accent-dark);
+	padding: 0;
+
+	width: 300px;
+	border: 1px solid var(--accent);
+	border-radius: 100px;
+
+	&::before,
+	&::after {
+		display: none;
+	}
+
+	&-text {
+		padding: 5px 10px;
+		color: var(--accent-dark);
+	}
+
+	&:hover {
+		background-color: var(--accent);
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.no-scroll .nav__link {
+	transition: all 0.2s ease-in;
+	position: relative;
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: -0.04em;
+	color: var(--text-color-dark);
+
+	&::before {
+		content: "[";
+		font-family: 'Involve', sans-serif;
+		font-size: 20px;
+		display: inline-block;
+		transition: all 0.2s ease-in;
+		margin-right: 4px;
+		opacity: 0;
+	}
+
+	&::after {
+		content: "]";
+		font-family: 'Involve', sans-serif;
+		font-size: 20px;
+		display: inline-block;
+		transition: all 0.2s ease-in;
+		margin-left: 4px;
+		opacity: 0;
+	}
+
+	&:hover {
+
+		&::before,
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
+.no-scroll .nav__btn-mobile {
+	display: flex;
+	width: 100%;
+	max-width: 500px;
+	background-color: var(--accent);
+
+	&:hover {
+		background-color: var(--page-bg);
+	}
+
+	&::before,
+	&::after {
+		display: none;
+	}
+}

@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	height: 80px;
+	padding-bottom: 0;
+	font-family: var(--font-accent);
+	position: relative;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 20px;
+	}
+}
+
+.header__logo {
+	position: relative;
+	z-index: 999;
+}
