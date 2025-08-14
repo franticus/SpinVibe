@@ -9,12 +9,12 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	padding: 0 40px;
+	padding: 0 var(--container-padding);
 	pointer-events: none;
 	z-index: 9999;
 	opacity: 0.3;
 
-	display: none;
+	// display: none;
 
 	@include mobile {
 		padding: 0 10px;

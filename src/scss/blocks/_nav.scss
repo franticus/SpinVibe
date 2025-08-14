@@ -5,6 +5,8 @@
 }
 
 .nav {
+	position: relative;
+	z-index: 3;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -23,7 +25,7 @@
 .nav__list {
 	display: flex;
 	align-items: center;
-	column-gap: 20px;
+	column-gap: 34px;
 }
 
 .nav__link {
@@ -34,40 +36,19 @@
 	font-size: 16px;
 	line-height: 100%;
 	letter-spacing: -0.04em;
-	color: var(--text-color-dark);
+	color: var(--text-color);
 
-	margin-left: -10px;
-
-	&::before {
-		content: "[";
-		font-family: 'Involve', sans-serif;
-		font-size: 16px;
-		display: inline-block;
-		transition: all 0.2s ease-in;
-		margin-right: 4px;
-		opacity: 0;
-	}
-
-	&::after {
-		content: "]";
-		font-family: 'Involve', sans-serif;
-		font-size: 16px;
-		display: inline-block;
-		transition: all 0.2s ease-in;
-		margin-left: 4px;
-		opacity: 0;
-	}
+	padding: 0px 3px;
 
 	&:hover {
-
-		&::before,
-		&::after {
-			opacity: 1;
-		}
+		background-color: var(--page-bg);
+		color: var(--text-color-dark);
 	}
 }
 
 .nav__btn {
+	position: relative;
+	z-index: 3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -76,27 +57,18 @@
 	font-size: 16px;
 	line-height: 100%;
 	letter-spacing: -0.04em;
-	text-transform: uppercase;
-	height: 40px;
-	color: var(--accent-dark);
-	padding: 0;
-
-	width: 300px;
-	border: 1px solid var(--accent);
-	border-radius: 100px;
+	height: 20px;
+	color: var(--text-color);
+	padding: 0px 3px;
 
 	&::before,
 	&::after {
 		display: none;
 	}
 
-	&-text {
-		padding: 5px 10px;
-		color: var(--accent-dark);
-	}
-
 	&:hover {
-		background-color: var(--accent);
+		background-color: var(--page-bg);
+		color: var(--text-color-dark);
 	}
 
 	@include tablet {

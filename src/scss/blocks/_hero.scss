@@ -1,10 +1,20 @@
 .hero {
 	position: relative;
+	width: 100vw;
+	max-width: 1600px;
+	padding: 0;
+	margin-top: -80px;
 
 	.container {
 		padding: 130px 160px;
-		border-radius: 500px;
-		background-color: var(--accent-dark);
+		background-color: var(--accent);
+		background-color: #999;
+		background-image: url('../../img/hero/hero.jpg');
+		background-position: center center;
+		/* x y */
+		background-size: cover;
+		background-repeat: no-repeat;
+
 
 		@include tablet {
 			padding: 130px 90px;
