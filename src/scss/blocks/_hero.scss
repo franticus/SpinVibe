@@ -16,19 +16,6 @@
 		/* x y */
 		background-size: cover;
 		background-repeat: no-repeat;
-
-
-		@include tablet {
-			padding: 130px 90px;
-		}
-
-		@include mobile {
-			padding: 107px 50px;
-		}
-
-		@include mobile_small {
-			padding: 107px 10px;
-		}
 	}
 
 	.title__wrapper {
@@ -57,6 +44,7 @@
 	&__title {
 		font-weight: 800;
 		font-size: 177px;
+		font-size: clamp(65px, 11vw, 177px);
 		line-height: 70%;
 		letter-spacing: -0.04em;
 		text-transform: uppercase;
@@ -72,30 +60,32 @@
 		text-align: center;
 		z-index: 3;
 
-		span {
-			white-space: nowrap;
-		}
-
 		@include tablet {
-			font-size: 80px;
-		}
-
-		@include mobile {
-			font-size: 45px;
-			padding: 0 15px;
+			line-height: 90%;
+			white-space: normal;
+			text-align: center;
 		}
 	}
 
 	.subtitle__wrapper {
 		background-color: var(--page-bg);
 		color: var(--text-color-dark);
-		width: 469px;
+		width: 100%;
+		max-width: 469px;
 		justify-self: end;
 		padding: 20px;
+
+		@include mobile {
+			padding: 10px;
+		}
 
 		&-border {
 			border: 1px solid rgba(124, 0, 0, 0.6);
 			padding: 40px;
+
+			@include mobile {
+				padding: 20px;
+			}
 		}
 	}
 
@@ -113,12 +103,15 @@
 			line-height: 110%;
 			letter-spacing: -0.04em;
 			word-break: normal;
-			width: 300px;
+			width: 100%;
+
+			@include mobile {
+				font-size: 14px;
+			}
 		}
 
 		@include mobile {
-			font-size: 16px;
-			margin: 15px auto;
+			font-size: 25px;
 		}
 	}
 
@@ -137,7 +130,8 @@
 		color: var(--accent-dark);
 		background-color: var(--page-bg);
 		padding: 0;
-		width: 469px;
+		width: 100%;
+		max-width: 469px;
 		margin-top: 40px;
 		margin-bottom: 158px;
 

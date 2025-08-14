@@ -5,7 +5,13 @@
 	font-weight: 900;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: "Inter";
+	font-display: swap;
+	src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+}
 @font-face {
 	font-family: "Inter";
 	font-display: swap;
@@ -13,7 +19,6 @@
 	font-weight: 500;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Inter";
 	font-display: swap;
@@ -21,27 +26,10 @@
 	font-weight: 400;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Inter";
 	font-display: swap;
 	src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
 	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Inter";
-	font-display: swap;
-	src: url("../fonts/Inter-ExtraBold.woff2") format("woff2");
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "Involve";
-	font-display: swap;
-	src: url("../fonts/Involve-Medium.woff2") format("woff2"), url("../fonts/Involve-Medium.woff") format("woff");
-	font-weight: 500;
 	font-style: normal;
 }
