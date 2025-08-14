@@ -5,6 +5,7 @@
 	max-width: 1600px;
 	padding: 0;
 	margin-top: -80px;
+	overflow: hidden;
 
 	.container {
 		padding: 130px 15px;
@@ -50,20 +51,27 @@
 		text-transform: uppercase;
 		text-align: center;
 		color: #faa;
-		opacity: 0.5;
+		opacity: 0.7;
 		position: relative;
 		width: 100%;
 		white-space: nowrap;
 
-		color: var(--text-color);
-		margin: 0 auto;
 		text-align: center;
 		z-index: 3;
 
 		@include tablet {
-			line-height: 90%;
+			line-height: 100%;
 			white-space: normal;
 			text-align: center;
+			bottom: -15px;
+		}
+
+		@include mobile {
+			bottom: -10px;
+		}
+
+		@include mobile_small {
+			bottom: -10px;
 		}
 	}
 
@@ -141,6 +149,10 @@
 		&:hover {
 			background-color: var(--page-bg);
 			color: var(--text-color-dark);
+		}
+
+		@include mobile {
+			margin-bottom: 100px;
 		}
 	}
 
