@@ -153,4 +153,40 @@
 			}
 		}
 	}
+
+	.img__wrapper {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		color: var(--text-color-dark);
+
+		&-img {
+			grid-column: 6 / -1;
+			width: 100%;
+			max-width: 268px;
+		}
+
+		&-text {
+			grid-column: 6 / -1;
+			width: 100%;
+			max-width: 343px;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 110%;
+			letter-spacing: -0.04em;
+		}
+
+		&-title {
+			grid-column: 6 / -1;
+			width: 100%;
+			max-width: 343px;
+			margin-bottom: 20px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 120%;
+			letter-spacing: -0.04em;
+			text-transform: uppercase;
+		}
+	}
 }
