@@ -85,9 +85,9 @@
 					<a href="#!" class="hero__btn">
 						Get the App
 					</a>
-					<div class="title__wrapper">
-						<h1 class="hero__title">fortune awaits.</h1>
-					</div>
+					<h1 class="hero__title">fortune awaits.</h1>
+					<!-- <div class="title__wrapper"> -->
+					<!-- </div> -->
 				</div>
 			</section>
 
@@ -269,6 +269,35 @@
 						</p>
 					</div>
 				</div>
+			</section>
+
+			<section class="form container" id="form">
+				<h2 class="form__title">
+					<div class="rect rect-top-left"></div>
+					<div class="rect rect-top-mid"></div>
+					<div class="rect rect-top-right"></div>
+					<p>Send us an email</p>
+					<div class="rect rect-bottom-left"></div>
+					<div class="rect rect-bottom-mid"></div>
+					<div class="rect rect-bottom-right"></div>
+				</h2>
+
+				<div class="text">
+					Get in touch: we’re here to help! We’d love to hear from you.
+				</div>
+
+				<form class="contact__form" action="../../php/thanks_form.php" method="post">
+					<input type="text" name="name" placeholder="Name" required />
+					<input type="email" name="email" placeholder="E-mail" required />
+					<input type="phone" name="phone" placeholder="Phone" required />
+					<textarea name="message" placeholder="Message" required></textarea>
+					<div class="contact__form-text">
+						By clicking the "Send Message" button, you confirm your consent to the processing of personal data and agree to the
+						<a href="privacy-policy.html">privacy policy</a>
+					</div>
+
+					<button class="form__btn" type="submit">send the message</button>
+				</form>
 			</section>
 
 			<footer class="footer">
