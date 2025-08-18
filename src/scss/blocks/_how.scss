@@ -342,7 +342,6 @@
 		max-width: 469px;
 		margin: 0 auto;
 		margin-top: 40px;
-		margin-bottom: 158px;
 
 		&:hover {
 			.bars_right {
@@ -400,10 +399,6 @@
 			@include mobile {
 				max-width: 260px;
 			}
-		}
-
-		@include mobile {
-			margin-bottom: 100px;
 		}
 	}
 }
