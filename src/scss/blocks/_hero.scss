@@ -160,29 +160,6 @@
 				right: 0%;
 			}
 		}
-
-		@keyframes bars_right {
-			0% {
-				opacity: 0;
-				width: 30px;
-				right: 12%;
-			}
-
-			30% {
-				opacity: 1;
-				width: 18px;
-			}
-
-			70% {
-				opacity: 1;
-			}
-
-			100% {
-				width: 0px;
-				right: 0%;
-				opacity: 0;
-			}
-		}
 	}
 
 	.bars_left {
@@ -215,29 +192,6 @@
 			&_8 {
 				width: 4px;
 				left: 0%;
-			}
-		}
-
-		@keyframes bars_left {
-			0% {
-				opacity: 0;
-				width: 30px;
-				left: 12%;
-			}
-
-			30% {
-				opacity: 1;
-				width: 18px;
-			}
-
-			70% {
-				opacity: 1;
-			}
-
-			100% {
-				width: 0px;
-				left: 0%;
-				opacity: 0;
 			}
 		}
 	}

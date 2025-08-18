@@ -3,9 +3,10 @@
 	position: relative;
 	width: 100vw;
 	max-width: 1600px;
+	padding: 0px 15px;
 
-	.container {
-		padding: 0px 15px;
+	@include mobile {
+		padding: 0px 10px;
 	}
 
 	&__title {
