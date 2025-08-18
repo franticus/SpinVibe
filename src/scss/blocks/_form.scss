@@ -341,7 +341,7 @@
 		max-width: 469px;
 		margin-top: 20px;
 
-		@include mobile {
+		@include mobile_small {
 			margin-top: 10px;
 		}
 
