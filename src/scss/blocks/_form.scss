@@ -330,12 +330,16 @@
 		letter-spacing: -0.04em;
 		text-transform: uppercase;
 		height: 40px;
-		color: var(--accent-dark);
+		color: var(--accent);
 		// background-color: var(--page-bg);
 		padding: 0;
 		width: 100%;
 		max-width: 469px;
 		margin-top: 40px;
+
+		@include mobile {
+			margin-top: 10px;
+		}
 
 		&:hover {
 			.bars_right {

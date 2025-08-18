@@ -343,6 +343,10 @@
 		margin: 0 auto;
 		margin-top: 40px;
 
+		@include mobile {
+			margin-top: 20px;
+		}
+
 		&:hover {
 			.bars_right {
 				.bar_1 {
