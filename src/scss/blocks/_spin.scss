@@ -106,6 +106,7 @@
 			grid-column: 1 / -1;
 			grid-row: 1;
 			margin-bottom: 20px;
+			line-height: normal;
 		}
 
 		@include mobile {
@@ -138,6 +139,7 @@
 		@include tablet {
 			grid-column: 1 / -1;
 			grid-row: 2;
+			line-height: normal;
 		}
 
 		@include mobile {
