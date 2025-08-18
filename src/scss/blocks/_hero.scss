@@ -66,18 +66,18 @@
 		z-index: 3;
 
 		@include tablet {
-			line-height: 100%;
+			line-height: 90%;
 			white-space: normal;
 			text-align: center;
-			bottom: -15px;
+			bottom: -10px;
 		}
 
 		@include mobile {
-			bottom: -10px;
+			bottom: -6px;
 		}
 
 		@include mobile_small {
-			bottom: -10px;
+			bottom: -4px;
 		}
 	}
 
@@ -210,7 +210,7 @@
 		letter-spacing: -0.04em;
 		text-transform: uppercase;
 		height: 40px;
-		color: var(--accent-dark);
+		color: var(--accent);
 		// background-color: var(--page-bg);
 		padding: 0;
 		width: 100%;
