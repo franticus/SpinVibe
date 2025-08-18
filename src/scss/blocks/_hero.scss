@@ -128,7 +128,122 @@
 		}
 	}
 
+	.bars_right {
+		position: absolute;
+		height: 40px;
+		width: 100%;
+
+		.bar {
+			width: 100%;
+			position: absolute;
+			background-color: red;
+			background-color: var(--page-bg);
+			height: 100%;
+
+			&_1 {
+				width: 20px;
+				right: 12%;
+			}
+
+			&_2 {
+				width: 16px;
+				right: 6%;
+			}
+
+			&_3 {
+				width: 8px;
+				right: 2%;
+			}
+
+			&_4 {
+				width: 4px;
+				right: 0%;
+			}
+		}
+
+		@keyframes bars_right {
+			0% {
+				opacity: 0;
+				width: 30px;
+				right: 12%;
+			}
+
+			30% {
+				opacity: 1;
+				width: 18px;
+			}
+
+			70% {
+				opacity: 1;
+			}
+
+			100% {
+				width: 0px;
+				right: 0%;
+				opacity: 0;
+			}
+		}
+	}
+
+	.bars_left {
+		position: absolute;
+		height: 40px;
+		width: 100%;
+
+		.bar {
+			width: 100%;
+			position: absolute;
+			background-color: red;
+			background-color: var(--page-bg);
+			height: 100%;
+
+			&_5 {
+				width: 20px;
+				left: 12%;
+			}
+
+			&_6 {
+				width: 16px;
+				left: 6%;
+			}
+
+			&_7 {
+				width: 8px;
+				left: 2%;
+			}
+
+			&_8 {
+				width: 4px;
+				left: 0%;
+			}
+		}
+
+		@keyframes bars_left {
+			0% {
+				opacity: 0;
+				width: 30px;
+				left: 12%;
+			}
+
+			30% {
+				opacity: 1;
+				width: 18px;
+			}
+
+			70% {
+				opacity: 1;
+			}
+
+			100% {
+				width: 0px;
+				left: 0%;
+				opacity: 0;
+			}
+		}
+	}
+
 	.hero__btn {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -141,19 +256,69 @@
 		text-transform: uppercase;
 		height: 40px;
 		color: var(--accent-dark);
-		background-color: var(--page-bg);
+		// background-color: var(--page-bg);
 		padding: 0;
 		width: 100%;
 		max-width: 469px;
 		margin-top: 40px;
 		margin-bottom: 158px;
 
-		border: 1px solid var(--page-bg);
-		transition: all 0.2s ease-in;
-
 		&:hover {
+			.bars_right {
+				.bar_1 {
+					animation: bars_right 4s infinite;
+				}
+
+				.bar_2 {
+					animation: bars_right 4s infinite;
+					animation-delay: -1s;
+				}
+
+				.bar_3 {
+					animation: bars_right 4s infinite;
+					animation-delay: -2s;
+				}
+
+				.bar_4 {
+					animation: bars_right 4s infinite;
+					animation-delay: -3s;
+				}
+			}
+
+			.bars_left {
+				.bar_5 {
+					animation: bars_left 4s infinite;
+				}
+
+				.bar_6 {
+					animation: bars_left 4s infinite;
+					animation-delay: -1s;
+				}
+
+				.bar_7 {
+					animation: bars_left 4s infinite;
+					animation-delay: -2s;
+				}
+
+				.bar_8 {
+					animation: bars_left 4s infinite;
+					animation-delay: -3s;
+				}
+			}
+		}
+
+		&-text {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+			width: 100%;
+			max-width: 300px;
 			background-color: var(--page-bg);
-			color: var(--text-color-dark);
+
+			@include mobile {
+				max-width: 260px;
+			}
 		}
 
 		@include mobile {
