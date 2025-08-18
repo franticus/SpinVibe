@@ -17,6 +17,11 @@
 		/* x y */
 		background-size: cover;
 		background-repeat: no-repeat;
+
+		@include mobile {
+			padding: 100px 10px;
+			padding-bottom: 0px;
+		}
 	}
 
 	.title__wrapper {

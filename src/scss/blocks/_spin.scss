@@ -3,10 +3,10 @@
 	position: relative;
 	width: 100vw;
 	max-width: 1600px;
-	padding: 0;
+	padding: 0 15px;
 
-	.container {
-		padding: 0px 15px;
+	@include mobile {
+		padding: 0px 10px;
 	}
 
 	&_grid {
@@ -79,7 +79,7 @@
 		text-transform: uppercase;
 		grid-column: 1 / 7;
 		grid-row: 1;
-		margin-top: -12px;
+		margin-top: -20px;
 		margin-bottom: 40px;
 		position: relative;
 		z-index: 3;
