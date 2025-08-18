@@ -42,6 +42,7 @@
     "gulp-webp-retina-html": "^1.2.0",
     "i": "^0.3.7",
     "imagemin-webp": "^6.0.1",
+    "merge-stream": "^2.0.0",
     "npm": "^9.9.3",
     "sass": "^1.63.4",
     "style-loader": "^3.3.3",
