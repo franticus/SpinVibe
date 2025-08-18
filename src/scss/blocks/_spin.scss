@@ -56,7 +56,11 @@
 		font-size: 907px;
 		font-size: clamp(173px, 50vw, 907px);
 		line-height: 100%;
-		letter-spacing: -20px;
+		letter-spacing: -0.04em;
+		font-optical-sizing: none;
+		font-kerning: none;
+		font-variant-ligatures: none;
+		font-feature-settings: "kern" 0, "liga" 0;
 		text-transform: uppercase;
 		text-align: center;
 		color: #faa;
